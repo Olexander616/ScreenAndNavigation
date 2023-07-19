@@ -4,39 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ff72df"
     tools:context=".MainActivity">
 
-    <EditText
+    <TextView
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:id="@+id/input_name"
+        android:id="@+id/massege_textView"
         android:textSize="44sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="name"
-        app:layout_constraintBottom_toTopOf="@+id/my_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="---"
+        android:textColor="#000000"
         app:layout_constraintTop_toTopOf="parent" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/my_button"
-        android:text="Обери фрукт"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-    <TextView
+        android:id="@+id/apple_button"
+        android:text="Яблуко"
+        android:textColor="#ff33"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/my_button"
-        android:id="@+id/resultTextView"
-        android:textColor="@color/cardview_shadow_end_color"
-        android:textSize="44sp"
+        app:layout_constraintTop_toBottomOf="@+id/massege_textView"
+        />
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="----"/>
+        android:id="@+id/banana_button"
+        android:text="Яблуко"
+        android:textColor="#ff33"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apple_button"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
